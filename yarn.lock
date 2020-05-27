@@ -1623,7 +1623,7 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react-dom@*":
+"@types/react-dom@*", "@types/react-dom@^16.9.8":
   version "16.9.8"
   resolved "https://tools.mckesson.com/artifactory/api/npm/mt_otc_enterprise_services-npm/@types/react-dom/-/react-dom-16.9.8.tgz#fe4c1e11dfc67155733dfa6aa65108b4971cb423"
   integrity sha1-/kweEd/GcVVzPfpqplEItJcctCM=
@@ -1645,7 +1645,7 @@
     "@types/prop-types" "*"
     "@types/react" "*"
 
-"@types/react@*":
+"@types/react@*", "@types/react@^16.9.35":
   version "16.9.35"
   resolved "https://tools.mckesson.com/artifactory/api/npm/mt_otc_enterprise_services-npm/@types/react/-/react-16.9.35.tgz#a0830d172e8aadd9bd41709ba2281a3124bbd368"
   integrity sha1-oIMNFy6Krdm9QXCboigaMSS702g=
@@ -10487,6 +10487,11 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://tools.mckesson.com/artifactory/api/npm/mt_otc_enterprise_services-npm/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
+
+typescript@^3.9.3:
+  version "3.9.3"
+  resolved "https://tools.mckesson.com/artifactory/api/npm/mt_otc_enterprise_services-npm/typescript/-/typescript-3.9.3.tgz#d3ac8883a97c26139e42df5e93eeece33d610b8a"
+  integrity sha1-06yIg6l8JhOeQt9ek+7s4z1hC4o=
 
 unicode-canonical-property-names-ecmascript@^1.0.4:
   version "1.0.4"

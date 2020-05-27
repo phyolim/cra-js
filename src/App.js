@@ -32,7 +32,7 @@ function App() {
       </EuiHeader>
       {isPopoverOpen &&
       <EuiOverlayMask>
-        <EuiModal>
+        <EuiModal onClose={()=> setIsPopoverOpen(false)}>
           <EuiButton onClick={()=> setIsPopoverOpen(false)}>
             Close
           </EuiButton>

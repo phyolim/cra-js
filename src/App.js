@@ -1,24 +1,43 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useState} from 'react';
 import './App.css';
+import '@elastic/eui/dist/eui_theme_light.css';
+import {
+  EuiHeader,
+  EuiHeaderLinks,
+  EuiHeaderLogo,
+  EuiHeaderSectionItem,
+  EuiOverlayMask,
+  EuiButton,
+  EuiButtonEmpty,
+  EuiModal
+} from '@elastic/eui';
 
 function App() {
+
+  const [isPopoverOpen, setIsPopoverOpen] = useState(false);
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <EuiHeader>
+        <EuiHeaderSectionItem border="right">
+          <EuiHeaderLogo href="#">Demo</EuiHeaderLogo>
+        </EuiHeaderSectionItem>
+
+        <EuiHeaderLinks>
+          <EuiButtonEmpty onClick={()=> setIsPopoverOpen(true)}>
+            Open Popover
+          </EuiButtonEmpty>
+        </EuiHeaderLinks>
+      </EuiHeader>
+      {isPopoverOpen &&
+      <EuiOverlayMask>
+        <EuiModal>
+          <EuiButton onClick={()=> setIsPopoverOpen(false)}>
+            Close
+          </EuiButton>
+        </EuiModal>
+      </EuiOverlayMask>}
     </div>
   );
 }
